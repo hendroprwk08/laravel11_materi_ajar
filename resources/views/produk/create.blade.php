@@ -5,7 +5,7 @@
 
 <!-- section yang memiliki barisan kode -->
 @section('halaman')
-<a href="{{ route('produk.index') }}">+ Kembali</a>
+<a href="{{ route('produk.index') }}">&larr; Kembali</a>
 <form action="{{ route('produk.store') }}" method="POST" enctype="multipart/form-data">
     @csrf
     <p>

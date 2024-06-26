@@ -32,7 +32,7 @@
             <td><a href="{{ route('produk.show', $produk->idproduk) }}">{{ $produk->nama }}</a></td>
             <td>{{ "Rp " . number_format( $produk->harga, 2, ',', '.' ) }}</td>
             <td>
-                <form onsubmit="return confirm('Apakah Anda Yakin ?');" action="{{ route('produk.destroy', $produk->idproduk) }}" method="POST">
+                <form action="{{ route('produk.destroy', $produk->idproduk) }}" method="POST">
                     <a href="{{ route('produk.edit', $produk->idproduk) }}">Ubah</a>
 
                     @csrf

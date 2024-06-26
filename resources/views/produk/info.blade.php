@@ -5,7 +5,7 @@
 
 <!-- section yang memiliki barisan kode -->
 @section('halaman')
-<a href="{{ route('produk.index') }}">+ Kembali</a>
+<a href="{{ route('produk.index') }}">&larr; Kembali</a>
 <p>
     @if (!empty($produkModel->foto))
     <img src="{{ asset('/gambar/'. $produkModel->foto) }}" width="200px">
